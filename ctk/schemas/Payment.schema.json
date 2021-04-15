@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "account": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ]
+        },
+        "paymentMethod": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "string"
+                },
+                "drawer": {
+                    "type": "string"
+                },
+                "payee": {
+                    "type": "string"
+                },
+                "bank": {
+                    "type": "string"
+                },
+                "date": {
+                    "type": "string"
+                }
+            }
+        },
+        "totalAmount": {
+            "type": "object"
+        }
+    },
+    "required": [
+        "account",
+        "paymentMethod",
+        "totalAmount"
+    ]
+}
